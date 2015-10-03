@@ -1,4 +1,3 @@
-#!/bin/sh
 xcode-select –install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor
@@ -10,3 +9,8 @@ brew install ${PROG_BASE}
 brew tap caskroom/versions
 brew cask install sublime-text3
 brew cask install ${PROG_PROG}
+
+
+#zsh
+chsh -s /usr/local/bin/zsh
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
